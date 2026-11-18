@@ -17,6 +17,7 @@ import {
 import type { ReactNode } from "react";
 import ScrollReveal from "./components/scroll-reveal";
 import ServicesFlip from "./components/services-flip";
+import LandingFeatures from "./components/landing-features";
 import ContactSection from "./components/contact-section";
 
 /* ───────────── Datos (editá acá tus links y textos) ───────────── */
@@ -175,6 +176,7 @@ function Header() {
             {[
               ["Sobre mí", "#sobre-mi"],
               ["Servicios", "#servicios"],
+              ["¿Qué incluye?", "#que-incluye"],
               ["Proyectos", "#proyectos"],
               ["Tarjetas Creativas", "#tarjetas"],
               ["Contacto", "#contacto"],
@@ -559,6 +561,7 @@ export default function Home() {
         <Hero />
         <About />
         <Services />
+        <LandingFeatures />
         <Portfolio />
         <InteractiveCards />
       </main>
