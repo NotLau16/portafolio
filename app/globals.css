@@ -24,3 +24,30 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ───────────── Scroll Reveal Animations ───────────── */
+
+.sr-hidden {
+  opacity: 0;
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.sr-from-up {
+  transform: translateY(40px);
+}
+.sr-from-down {
+  transform: translateY(-40px);
+}
+.sr-from-left {
+  transform: translateX(-40px);
+}
+.sr-from-right {
+  transform: translateX(40px);
+}
+
+.sr-visible {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
