@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Check, Copy, ExternalLink, MessageCircle, Send, Sparkles } from "lucide-react";
 import ScrollReveal from "./scroll-reveal";
 
@@ -56,6 +56,11 @@ function GmailIcon({ className }: { className?: string }) {
 
 export default function ContactSection() {
   const [copiedType, setCopiedType] = useState<"phone" | "email" | null>(null);
+  const [currentYear, setCurrentYear] = useState(2026);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   const copyToClipboard = (text: string, type: "phone" | "email") => {
     navigator.clipboard.writeText(text);
@@ -241,7 +246,7 @@ export default function ContactSection() {
             </div>
 
             <p className="text-xs text-zinc-500 text-center sm:text-right">
-              © {new Date().getFullYear()} Lautaro Sánchez. Todos los derechos reservados.
+              © {currentYear} Lautaro Sánchez. Todos los derechos reservados.
             </p>
           </div>
         </ScrollReveal>
