@@ -122,37 +122,17 @@ function SectionTitle({ children }: { children: ReactNode }) {
 
 
 
-/* ───────────── Logo SVG inline ───────────── */
+/* ───────────── Logo STL ───────────── */
 
 function LogoSTL({ className }: { className?: string }) {
   return (
-    <svg
-      viewBox="0 0 512 512"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      aria-hidden="true"
-    >
-      <defs>
-        <linearGradient id="logo-bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#2563EB" />
-          <stop offset="100%" stopColor="#1D4ED8" />
-        </linearGradient>
-      </defs>
-      <rect width="512" height="512" rx="96" fill="url(#logo-bg)" />
-      <text
-        x="256"
-        y="310"
-        textAnchor="middle"
-        fontFamily="Arial, Helvetica, sans-serif"
-        fontWeight="800"
-        fontSize="200"
-        fill="white"
-        letterSpacing="-8"
-      >
-        STL
-      </text>
-    </svg>
+    <Image
+      src="/logo-stl.png"
+      alt="Logo STL"
+      width={48}
+      height={48}
+      className={`rounded-xl object-cover shadow-sm ${className || "size-9"}`}
+    />
   );
 }
 
@@ -298,9 +278,7 @@ function About() {
                   crecimiento para tu negocio, no un dolor de cabeza técnico.
                 </p>
                 <div className="mt-8 flex items-center gap-3">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-600/10 text-blue-600 font-bold text-sm">
-                    STL
-                  </div>
+                  <LogoSTL className="size-11 rounded-2xl" />
                   <div>
                     <p className="text-sm font-semibold text-zinc-900">Soluciones Tecnológicas Lautaro</p>
                     <p className="text-xs text-zinc-500">Desarrollo web e ingeniería IT orientada a resultados</p>

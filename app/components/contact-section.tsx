@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { Check, Copy, ExternalLink, MessageCircle, Send, Sparkles } from "lucide-react";
 import ScrollReveal from "./scroll-reveal";
 
@@ -236,9 +237,13 @@ export default function ContactSection() {
         <ScrollReveal delay={400}>
           <div className="mt-20 flex flex-col items-center justify-between gap-6 border-t border-zinc-800/80 pt-10 sm:flex-row">
             <div className="flex items-center gap-3">
-              <div className="flex size-9 items-center justify-center rounded-xl bg-blue-600 text-white font-extrabold text-sm shadow-md">
-                STL
-              </div>
+              <Image
+                src="/logo-stl.png"
+                alt="Logo STL"
+                width={36}
+                height={36}
+                className="size-9 rounded-xl object-cover shadow-md"
+              />
               <div>
                 <p className="text-sm font-semibold text-white">Soluciones Tecnológicas Lautaro</p>
                 <p className="text-xs text-zinc-500">Desarrollo Web & Servicios IT • Argentina</p>
