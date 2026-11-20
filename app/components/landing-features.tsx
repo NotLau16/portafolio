@@ -19,51 +19,51 @@ import ScrollReveal from "./scroll-reveal";
 const FEATURES = [
   {
     icon: Layers,
-    title: "Hasta 4 secciones estratégicas",
+    title: "Hasta 4 secciones",
     description:
-      "Estructura pensada para convencer y convertir: qué hacés, por qué elegirte, tus trabajos anteriores y tus canales de contacto directo.",
+      "Estructura pensada para convencer: qué hacés, por qué elegirte, tus trabajos realizados y contacto directo.",
     badge: "Estructura clara",
   },
   {
     icon: Smartphone,
     title: "Diseño adaptado a celulares y tablets",
     description:
-      "Más del 85% de tus clientes potenciales visitan tu página desde su teléfono móvil. Tu sitio se verá impecable y rápido en cualquier pantalla.",
-    badge: "100% Responsivo",
+      "La gran mayoría de tus visitas llega desde el teléfono móvil. Tu página se adapta con fluidez a cualquier pantalla.",
+    badge: "100% Mobile First",
   },
   {
     icon: MessageSquareShare,
-    title: "Contacto y redes sociales integradas",
+    title: "Formulario de contacto y redes integradas",
     description:
-      "Botones directos de WhatsApp, llamada telefónica, ubicación en Google Maps y accesos a tus redes para que el cliente te hable con un solo toque.",
+      "Botones directos de WhatsApp, formulario de consulta y redes sociales para que el cliente te hable con un solo toque.",
     badge: "Contacto directo",
   },
   {
     icon: Zap,
-    title: "Velocidad ultra optimizada",
+    title: "Velocidad optimizada",
     description:
-      "Una landing lenta pierde clientes antes de que lean el título, sobre todo si vienen de un anuncio en Instagram o Google. Carga en milisegundos.",
+      "Una landing lenta pierde a la gente antes de que lea el título, sobre todo si llega desde un anuncio de Instagram o Google.",
     badge: "Carga instantánea",
   },
   {
     icon: Search,
-    title: "SEO básico y presencia en Google",
+    title: "SEO básico para Google",
     description:
-      "Configuración técnica de títulos, descripciones y etiquetas para que los motores de búsqueda de Google entiendan de qué trata tu negocio.",
+      "Título, descripción y estructura optimizada para que Google entienda perfectamente de qué se trata tu negocio.",
     badge: "Posicionamiento",
   },
   {
     icon: Lock,
     title: "Hosting y certificado SSL incluidos",
     description:
-      "Tu sitio web publicado en servidores de última generación, con el candado de seguridad (HTTPS) y alta disponibilidad sin costos sorpresa.",
+      "Tu sitio web publicado en servidores rápidos, seguro con candado HTTPS y alta disponibilidad garantizada.",
     badge: "Seguridad & Nube",
   },
   {
     icon: BadgeDollarSign,
     title: "Pago único. Sin cuota mensual",
     description:
-      "Pagás una sola vez por el desarrollo de tu página web. Es tuya, sin suscripciones obligatorias ni alquileres mensuales para que siga online.",
+      "Sin cuotas mensuales por la página. Pagás una sola vez por el desarrollo y el sitio web queda 100% en tus manos.",
     badge: "Cero mensualidades",
     highlight: true,
   },
