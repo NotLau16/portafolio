@@ -74,7 +74,7 @@ export default function ContactSection() {
       {/* Fondo con brillo ambiental sutil */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 -z-0 h-96 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(37,99,235,0.18),transparent)]"
+        className="pointer-events-none absolute inset-x-0 top-0 -z-0 h-96 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(249,115,22,0.2),transparent)]"
       />
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6 py-24 sm:px-8 sm:py-32">

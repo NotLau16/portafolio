@@ -79,8 +79,8 @@ export default function LandingFeatures() {
         {/* Encabezado */}
         <div className="max-w-3xl">
           <ScrollReveal>
-            <div className="inline-flex items-center gap-2 rounded-full border border-blue-600/20 bg-blue-50 px-3.5 py-1 text-xs font-bold text-blue-700">
-              <Sparkles className="size-3.5 text-blue-600" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-orange-500/20 bg-orange-50 px-3.5 py-1 text-xs font-bold text-orange-700">
+              <Sparkles className="size-3.5 text-orange-500" />
               TRANSPARENCIA TOTAL • TODO INCLUIDO
             </div>
           </ScrollReveal>
@@ -110,7 +110,7 @@ export default function LandingFeatures() {
                 <div
                   className={`group relative flex h-full flex-col justify-between rounded-3xl border p-8 transition-all duration-300 ${
                     isHighlight
-                      ? "border-blue-600/40 bg-gradient-to-br from-blue-50/80 via-white to-blue-50/40 shadow-md hover:border-blue-600 hover:shadow-xl lg:col-span-3 lg:flex-row lg:items-center"
+                      ? "border-orange-500/40 bg-gradient-to-br from-orange-50/80 via-white to-amber-50/40 shadow-md hover:border-orange-500 hover:shadow-xl lg:col-span-3 lg:flex-row lg:items-center"
                       : "border-zinc-200 bg-white hover:-translate-y-1 hover:border-zinc-300 hover:shadow-lg"
                   }`}
                 >
@@ -119,8 +119,8 @@ export default function LandingFeatures() {
                       <div
                         className={`flex size-12 items-center justify-center rounded-2xl border transition duration-300 ${
                           isHighlight
-                            ? "border-blue-200 bg-blue-600 text-white shadow-md shadow-blue-600/20"
-                            : "border-zinc-100 bg-zinc-50 text-zinc-900 group-hover:border-blue-600 group-hover:bg-blue-600 group-hover:text-white"
+                            ? "border-orange-200 bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-md shadow-orange-500/20"
+                            : "border-zinc-100 bg-zinc-50 text-zinc-900 group-hover:border-orange-500 group-hover:bg-orange-500 group-hover:text-white"
                         }`}
                       >
                         <Icon className="size-6" strokeWidth={1.8} />
@@ -128,7 +128,7 @@ export default function LandingFeatures() {
                       <span
                         className={`rounded-full px-3 py-1 text-xs font-semibold ${
                           isHighlight
-                            ? "bg-blue-100 text-blue-800 border border-blue-200"
+                            ? "bg-orange-100 text-orange-800 border border-orange-200"
                             : "bg-zinc-50 border border-zinc-200 text-zinc-600"
                         }`}
                       >
@@ -158,7 +158,7 @@ export default function LandingFeatures() {
                         href={quoteUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-7 py-4 text-base font-bold text-white shadow-lg shadow-blue-600/25 transition duration-300 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-600/30 w-full sm:w-auto"
+                        className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 px-7 py-4 text-base font-bold text-white shadow-lg shadow-orange-500/25 transition duration-300 hover:-translate-y-0.5 hover:from-orange-600 hover:to-amber-600 hover:shadow-xl hover:shadow-orange-500/30 w-full sm:w-auto"
                       >
                         <span>Pedir presupuesto</span>
                         <ArrowRight className="size-4" />

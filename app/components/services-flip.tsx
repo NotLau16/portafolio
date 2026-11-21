@@ -41,7 +41,7 @@ const servicesData: ServiceItem[] = [
     title: "Desarrollo Web de Alto Rendimiento",
     text: "Landing pages y aplicaciones desarrolladas con Next.js y React para tiempos de carga en milisegundos y máximo SEO.",
     badge: "Ultra Velocidad & SEO",
-    accentColor: "blue",
+    accentColor: "orange",
     details: [
       "Puntuación 100/100 en Google Lighthouse",
       "Optimización para móviles y computadoras",
@@ -130,9 +130,9 @@ function ServiceAnimation({ type }: { type: ServiceItem["animationType"] }) {
             <span className="text-emerald-400 font-bold">100 / 100</span>
           </div>
           <div className="h-1.5 w-full overflow-hidden rounded-full bg-zinc-800">
-            <div className="h-full w-full bg-gradient-to-r from-blue-500 to-emerald-400 animate-pulse" />
+            <div className="h-full w-full bg-gradient-to-r from-orange-500 to-amber-400 animate-pulse" />
           </div>
-          <p className="text-[10px] text-blue-400">✓ Cero plantillas lentas de WordPress</p>
+          <p className="text-[10px] text-orange-400">✓ Cero plantillas lentas de WordPress</p>
         </div>
       </div>
     );
@@ -256,7 +256,7 @@ export default function ServicesFlip() {
               >
                 {/* ──────── CARA FRONTAL ──────── */}
                 <div
-                  className="absolute inset-0 flex flex-col justify-between rounded-3xl border border-zinc-200 bg-white p-8 transition hover:border-blue-500/40"
+                  className="absolute inset-0 flex flex-col justify-between rounded-3xl border border-zinc-200 bg-white p-8 transition hover:border-orange-500/40"
                   style={{
                     backfaceVisibility: "hidden",
                     WebkitBackfaceVisibility: "hidden",
@@ -264,7 +264,7 @@ export default function ServicesFlip() {
                 >
                   <div>
                     <div className="flex items-center justify-between">
-                      <div className="flex size-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 border border-blue-100 transition group-hover:bg-blue-600 group-hover:text-white">
+                      <div className="flex size-12 items-center justify-center rounded-2xl bg-orange-50 text-orange-600 border border-orange-100 transition group-hover:bg-gradient-to-r group-hover:from-orange-500 group-hover:to-amber-500 group-hover:text-white">
                         <Icon className="size-6" strokeWidth={1.75} />
                       </div>
                       <span className="rounded-full bg-zinc-50 border border-zinc-200 px-3 py-1 text-xs font-semibold text-zinc-600">
@@ -281,12 +281,12 @@ export default function ServicesFlip() {
                   </div>
 
                   {/* Indicador para dar vuelta */}
-                  <div className="mt-6 flex items-center justify-between border-t border-zinc-100 pt-4 text-xs font-semibold text-blue-600">
+                  <div className="mt-6 flex items-center justify-between border-t border-zinc-100 pt-4 text-xs font-semibold text-orange-600">
                     <span className="flex items-center gap-1.5">
                       <RotateCcw className="size-3.5 transition group-hover:rotate-180" />
                       Tocar para ver demo & detalles
                     </span>
-                    <span className="rounded-full bg-blue-50 px-2 py-0.5 text-[11px] text-blue-700 font-bold">
+                    <span className="rounded-full bg-orange-50 px-2 py-0.5 text-[11px] text-orange-700 font-bold">
                       Girar
                     </span>
                   </div>
@@ -303,7 +303,7 @@ export default function ServicesFlip() {
                 >
                   <div>
                     <div className="flex items-center justify-between pb-3 border-b border-zinc-800">
-                      <span className="text-xs font-bold uppercase tracking-wider text-blue-400">
+                      <span className="text-xs font-bold uppercase tracking-wider text-orange-400">
                         {service.title}
                       </span>
                       <button
@@ -337,7 +337,7 @@ export default function ServicesFlip() {
 
                   <div className="mt-3 flex items-center justify-between text-[11px] text-zinc-500 pt-2 border-t border-zinc-800/80">
                     <span>STL Soluciones Tecnológicas</span>
-                    <span className="text-blue-400 font-medium">Tocá para voltear</span>
+                    <span className="text-orange-400 font-medium">Tocá para voltear</span>
                   </div>
                 </div>
               </div>

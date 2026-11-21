@@ -83,7 +83,7 @@ const projects = [
 /* ───────────── Piezas reutilizables ───────────── */
 
 const focus =
-  "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600";
+  "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500";
 
 function Container({ children }: { children: ReactNode }) {
   return <div className="mx-auto w-full max-w-6xl px-6 sm:px-8">{children}</div>;
@@ -100,7 +100,7 @@ function Button({
 }) {
   const styles =
     variant === "primary"
-      ? "bg-blue-600 text-white hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-600/25"
+      ? "bg-gradient-to-r from-orange-500 to-amber-500 text-white hover:-translate-y-0.5 hover:from-orange-600 hover:to-amber-600 hover:shadow-lg hover:shadow-orange-500/25 font-semibold"
       : "border border-zinc-700 text-zinc-300 hover:-translate-y-0.5 hover:border-zinc-500 hover:text-white hover:bg-white/5"; 
   return (
     <a
@@ -161,7 +161,7 @@ function Header() {
               ["Tarjetas Creativas", "#tarjetas"],
               ["Contacto", "#contacto"],
             ].map(([label, href]) => (
-              <a key={href} href={href} className={`transition hover:text-blue-600 ${focus}`}>
+              <a key={href} href={href} className={`transition hover:text-orange-500 ${focus}`}>
                 {label}
               </a>
             ))}
@@ -188,7 +188,7 @@ function Hero() {
       </div>
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[32rem] bg-[radial-gradient(60%_50%_at_50%_0%,rgba(37,99,235,0.15),transparent)]"
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[32rem] bg-[radial-gradient(60%_50%_at_50%_0%,rgba(249,115,22,0.18),transparent)]"
       />
       <Container>
         <div className="py-24 sm:py-32 lg:py-44">
@@ -266,7 +266,7 @@ function About() {
           <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr] lg:gap-16 items-start">
             <ScrollReveal direction="left">
               <div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-blue-600">
+                <span className="text-xs font-semibold uppercase tracking-wider text-orange-600">
                   Trayectoria & Enfoque
                 </span>
                 <div className="mt-3">
@@ -300,10 +300,10 @@ function About() {
                   {highlights.map(({ icon: Icon, title, desc }) => (
                     <div
                       key={title}
-                      className="group flex flex-col rounded-2xl border border-zinc-100 bg-zinc-50/70 p-4 transition duration-300 hover:border-blue-600/30 hover:bg-white hover:shadow-sm"
+                      className="group flex flex-col rounded-2xl border border-zinc-100 bg-zinc-50/70 p-4 transition duration-300 hover:border-orange-500/30 hover:bg-white hover:shadow-sm"
                     >
                       <div className="flex items-center gap-2.5 text-zinc-900">
-                        <div className="flex size-8 items-center justify-center rounded-xl bg-white border border-zinc-200 text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white">
+                        <div className="flex size-8 items-center justify-center rounded-xl bg-white border border-zinc-200 text-orange-500 transition group-hover:bg-gradient-to-r group-hover:from-orange-500 group-hover:to-amber-500 group-hover:text-white">
                           <Icon className="size-4" strokeWidth={2} />
                         </div>
                         <h4 className="text-sm font-semibold text-zinc-900">{title}</h4>
@@ -328,7 +328,7 @@ function Services() {
         <div className="py-24 sm:py-32">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <ScrollReveal>
-              <span className="text-xs font-semibold uppercase tracking-wider text-blue-600">
+              <span className="text-xs font-semibold uppercase tracking-wider text-orange-600">
                 Soluciones Integrales
               </span>
               <div className="mt-3">
@@ -488,7 +488,7 @@ function Portfolio() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex flex-col rounded-3xl border border-zinc-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-600/40 hover:shadow-md overflow-hidden h-full"
+                  className="group flex flex-col rounded-3xl border border-zinc-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-orange-500/40 hover:shadow-md overflow-hidden h-full"
                 >
                   {/* Project image */}
                   <div className="relative h-48 w-full overflow-hidden bg-zinc-100">
@@ -503,7 +503,7 @@ function Portfolio() {
                     <div className="flex items-start justify-between gap-4">
                       <h3 className="text-2xl font-semibold tracking-tight text-zinc-900">{title}</h3>
                       <ArrowUpRight
-                        className="mt-1 size-5 shrink-0 text-zinc-400 transition duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-blue-600"
+                        className="mt-1 size-5 shrink-0 text-zinc-400 transition duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-orange-500"
                         aria-hidden="true"
                       />
                     </div>
